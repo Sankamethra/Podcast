@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Playlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1">
+            <div class="logo">
+                <span>Podcast</span>
+            </div>
+            <ul>
+                <li id="home">
+                    <i class="fa fa-home main-icon" id="home"></i>
+                    <a [routerLink]="['../home']">
+                    <span id="home">Home</span></a>
+                </li>
+                <li id="search">
+                    <i class="fa fa-search main-icon"></i>
+                    <a [routerLink]="['../search']">
+                    <span>Search</span></a>
+                </li>
+            </ul>
+            <div class="user-records">
+                <div>
+                    <i class="fa fa-plus plus-icon"></i>
+                    <a [routerLink]="['../create']">
+                    <span>Create Podcast</span></a>
+                </div>
+            </div>
+            <div class="site-info">
+                <p>Cookies</p>
+                <p>Privacy</p>
+            </div>
+        </div>
+        <div class="child2">
+            <div class="sub-child-1">
+                <div class="menu" style="margin-top:33px;">
+                    <i [routerLink]="['../home']" class="fa fa-chevron-left"></i>
+                    <i [routerLink]="['../home']" class="fa fa-chevron-right" style="cursor: pointer;"></i>
+                    <a href="signup.html" class="sign-up">Sign up</a>
+                    <a href="login.html" class="log-in">Log in</a>
+                </div>
+            </div><br><br>
+    
+            <div class="album-header">
+                <p class="playlist-name">Podcast</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facilis accusantium
+                    quaerat inventore, a quis.</p>
+                <div class="playlist-info">
+                    <span>14,567 likes</span>
+                    <i class="fa fa-circle"></i>
+                    <span>120 songs</span>
+                    <i class="fa fa-circle"></i>
+                    <span>5.5 hours</span>
+                </div>
+            </div>
+            <div class="playlist-songs">
+                <div class="playlist-utils">
+                    <i class="fa fa-play play"></i>
+                    <i class="fa fa-heart-o"></i>
+                    <i class="fa fa-download"></i>
+                    <i class="fa fa-share-alt"></i>
+                </div>
+                <table cellspacing="0" cellpadding="0">
+                    <thead>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Album</th>
+                        <th>Singer</th>
+                        <th>Duration</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="s-no">1</span>
+                                <i class="fa fa-play s-play"></i>
+                            </td>
+                            <td class="song-title">
+                                <img class="song-img" src="../assets/img/images/podcast.jpg" alt=" img">
+                                <span>Episode1</span>
+                            </td>
+                            <td>Lorem ipsum</td>
+                            <td>
+                                <a href="artist_page.html">Singer Name</a>
+                                <i class="fa fa-search s-search"></i>
+                            </td>
+                            <td>5:14</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="s-no">2</span>
+                                <i class="fa fa-play s-play"></i>
+                            </td>
+                            <td class="song-title">
+                                <img class="song-img" src="../assets/img/images/podcast.jpg" alt=" img">
+                                <span>Episode2</span>
+                            </td>
+                            <td>Lorem ipsum</td>
+                            <td>
+                                <a href="artist_page.html">Singer Name</a>
+                                <i class="fa fa-search s-search"></i>
+                            </td>
+                            <td>5:14</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="s-no">3</span>
+                                <i class="fa fa-play s-play"></i>
+                            </td>
+                            <td class="song-title">
+                                <img class="song-img" src="../assets/img/images/podcast.jpg" alt=" img">
+                                <span>Episode3</span>
+                            </td>
+                            <td>Lorem ipsum</td>
+                            <td>
+                                <a href="artist_page.html">Singer Name</a>
+                                <i class="fa fa-search s-search"></i>
+                            </td>
+                            <td>5:14</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="s-no">4</span>
+                                <i class="fa fa-play s-play"></i>
+                            </td>
+                            <td class="song-title">
+                                <img class="song-img" src="../assets/img/images/podcast.jpg" alt=" img">
+                                <span>Episode4</span>
+                            </td>
+                            <td>Lorem ipsum</td>
+                            <td>
+                                <a href="artist_page.html">Singer Name</a>
+                                <i class="fa fa-search s-search"></i>
+                            </td>
+                            <td>5:14</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="s-no">5</span>
+                                <i class="fa fa-play s-play"></i>
+                            </td>
+                            <td class="song-title">
+                                <img class="song-img" src="../assets/img/images/podcast.jpg" alt=" img">
+                                <span>Episode5</span>
+                            </td>
+                            <td>Lorem ipsum</td>
+                            <td>
+                                <a href="artist_page.html">Singer Name</a>
+                                <i class="fa fa-search s-search"></i>
+                            </td>
+                            <td>5:14</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="s-no">6</span>
+                                <i class="fa fa-play s-play"></i>
+                            </td>
+                            <td class="song-title">
+                                <img class="song-img" src="../assets/img/images/podcast.jpg" alt=" img">
+                                <span>Episode6</span>
+                            </td>
+                            <td>Lorem ipsum</td>
+                            <td>
+                                <a href="artist_page.html">Singer Name</a>
+                                <i class="fa fa-search s-search"></i>
+                            </td>
+                            <td>5:14</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="s-no">7</span>
+                                <i class="fa fa-play s-play"></i>
+                            </td>
+                            <td class="song-title">
+                                <img class="song-img" src="../assets/img/images/podcast.jpg" alt=" img">
+                                <span>Episode7</span>
+                            </td>
+                            <td>Lorem ipsum</td>
+                            <td>
+                                <a href="artist_page.html">Singer Name</a>
+                                <i class="fa fa-search s-search"></i>
+                            </td>
+                            <td>5:14</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="s-no">8</span>
+                                <i class="fa fa-play s-play"></i>
+                            </td>
+                            <td class="song-title">
+                                <img class="song-img" src="../assets/img/images/podcast.jpg" alt=" img">
+                                <span>Episode8</span>
+                            </td>
+                            <td>Lorem ipsum</td>
+                            <td>
+                                <a href="artist_page.html">Singer Name</a>
+                                <i class="fa fa-search s-search"></i>
+                            </td>
+                            <td>5:14</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="s-no">9</span>
+                                <i class="fa fa-play s-play"></i>
+                            </td>
+                            <td class="song-title">
+                                <img class="song-img" src="../assets/img/images/podcast.jpg" alt=" img">
+                                <span>Episode9</span>
+                            </td>
+                            <td>Lorem ipsum</td>
+                            <td>
+                                <a href="artist_page.html">Singer Name</a>
+                                <i class="fa fa-search s-search"></i>
+                            </td>
+                            <td>5:14</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="s-no">10</span>
+                                <i class="fa fa-play s-play"></i>
+                            </td>
+                            <td class="song-title">
+                                <img class="song-img" src="../assets/img/images/podcast.jpg" alt=" img">
+                                <span>Episode10</span>
+                            </td>
+                            <td>Lorem ipsum</td>
+                            <td>
+                                <a href="artist_page.html">Singer Name</a>
+                                <i class="fa fa-search s-search"></i>
+                            </td>
+                            <td>5:14</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

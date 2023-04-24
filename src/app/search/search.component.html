@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <!-- font awsm  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+         
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child1">
+                <div class="logo">
+                    <span>Podcast</span>
+                </div>
+                <ul>
+                    <li id="home">
+                        <i class="fa fa-home main-icon" id="home"></i>
+                        <a [routerLink]="['../home']">
+                        <span id="home">Home</span></a>
+                    </li>
+                    <li id="search">
+                        <i class="fa fa-search main-icon"></i>
+                        <a [routerLink]="['../search']">
+                        <span>Search</span></a>
+                    </li>
+                </ul>
+                <div class="user-records">
+                    <div>
+                        <i class="fa fa-plus plus-icon"></i>
+                        <a [routerLink]="['../create']">
+                        <span>Create Podcast</span></a>
+                    </div>
+                </div>
+                <div class="site-info">
+                    <p>Cookies</p>
+                    <p>Privacy</p>
+                </div>
+            </div>
+            <div class="child2">
+                <div class="sub-child-1">
+                    <div class="menu" style="margin-top:33px;">
+                        <i class="fa fa-chevron-left"></i>
+                        <i class="fa fa-chevron-right" style="cursor: pointer;"></i>
+                        <a [routerLink]="['../signup']"class="sign-up">Sign up</a>
+                        <a [routerLink]="['../login']" class="log-in">Log in</a>
+                    </div>
+                </div>
+                <div class="sub-child-2" id="sub-child-2">             
+                    <input type="text" class="s-song" placeholder="Search your favourite song!!">
+                    <div class="search-list">
+                        <div class="search-card" id="opt-1">
+                            <div class="s-card-body">
+                                <img src="../assets/img/images/podcast7.png" alt="img">
+                                
+                                <span>Top 20 Podcasts</span>
+                            </div>
+                        </div>
+                        <div class="search-card" id="opt-2">
+                            <div class="s-card-body">
+                                <img src="../assets/img/images/podcast6.jfif" alt="">
+                                <span>Top 20 Podcasts</span>
+                            </div>
+                        </div>
+                        <div class="search-card" id="opt-3">
+                            <div class="s-card-body">
+                                <img src="../assets/img/images/podcast5.jfif" alt="">
+                                <span>Top 20 Podcasts</span>
+                            </div>
+                        </div>
+                        <div class="search-card" id="opt-4">
+                            <div class="s-card-body">
+                                <img src="../assets/img/images/podcast1.avif" alt="">
+                                <span>Top 20 Podcasts</span>
+                            </div>
+                        </div>
+                        <div class="search-card" id="opt-5">
+                            <div class="s-card-body">
+                                <img src="../assets/img/images/podcast2.jfif" alt="">
+                                <span>Top 20 Podcasts</span>
+                            </div>
+                        </div>
+                        <div class="search-card" id="opt-6">
+                            <div class="s-card-body">
+                                <img src="../assets/img/images/podcast3.jfif" alt="">
+                                <span>Top 20 Podcasts</span>
+                            </div>
+                        </div>
+                        <div class="search-card" id="opt-7">
+                            <div class="s-card-body">
+                                <img src="../assets/img/images/podcast4.png" alt="">
+                                <span>Top 20 Podcasts</span>
+                            </div>
+                        </div>
+                        <div class="search-card" id="opt-8">
+                            <div class="s-card-body">
+                                <img src="../assets/img/images/podcast5.jfif" alt="">
+                                <span>Top 20 Podcasts</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                
+            
+            </div>
+                
+                    
+            </div>
+                
+            </div>
+            
+        
+        
+        <router-outlet></router-outlet>
+
+       
+
+    </body>
+</html>

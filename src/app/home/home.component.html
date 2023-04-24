@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <!-- font awsm  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+         
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child1">
+                <div class="logo">
+                    <span>Podcast</span>
+                </div>
+                <ul>
+                    <li id="home">
+                        <i class="fa fa-home main-icon" id="home"></i>
+                        <a [routerLink]="['../home']">
+                        <span id="home">Home</span></a>
+                    </li>
+                    <li id="search">
+                        <i class="fa fa-search main-icon"></i>
+                        <a [routerLink]="['../search']">
+                        <span>Search</span></a>
+                    </li>
+                </ul>
+                <div class="user-records">
+                    <div>
+                        <i class="fa fa-plus plus-icon"></i>
+                        <a [routerLink]="['../create']">
+                        <span>Create Podcast</span></a>
+                    </div>
+                </div>
+                <div class="site-info">
+                    <p>Cookies</p>
+                    <p>Privacy</p>
+                </div>
+            </div>
+            <div class="child2">
+                <div class="sub-child-1">
+                    <div class="menu" style="margin-top:33px;">
+                        <i class="fa fa-chevron-left"></i>
+                        <i class="fa fa-chevron-right" style="cursor: pointer;"></i>
+                        <a [routerLink]="['../signup']" class="sign-up">Sign up</a>
+                        <a [routerLink]="['../login']" class="log-in">Log in</a>
+                    </div>
+                </div>
+                <div class="sub-child-2" id="sub-child-2">
+                    <div class="playlists">
+                        <div class="card-container">
+                            <div class="card-top-header">
+                                <h2 class="top-title">Podcast</h2>
+                                <p class="see-all">See All</p>
+                            </div>
+                            <div class="card-box">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <a [routerLink]="['../play']">
+                                        <img src="../assets/img/images/podcast.jpg" alt="img"></a>
+                                       </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <div class="img-box">
+                                        <a [routerLink]="['../play']">
+                                        <img src="../assets/img/images/podcast1.avif" alt="img"></a>
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <div class="img-box">
+                                        <a [routerLink]="['../play']">
+                                        <img src="../assets/img/images/podcast4.png" alt="img"></a>
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <div class="img-box">
+                                        <a [routerLink]="['../play']">
+                                        <img src="../assets/img/images/podcast5.jfif" alt="img"></a>
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="card-container">
+                            <div class="card-top-header">
+                                <h2 class="top-title">Podcasts Series</h2>
+                                <p class="see-all">See All</p>
+                            </div>
+                            <div class="card-box">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <a [routerLink]="['../play']">
+                                        <img src="../assets/img/images/podcast3.jfif" alt="img"></a>
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="../assets/img/images/podcast8.jfif" alt="img">
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="../assets/img/images/podcast6.jfif" alt="img">
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="../assets/img/images/podcast2.jfif" alt="img">
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="card-container">
+                            <div class="card-top-header">
+                                <h2 class="top-title">Podcasts Series</h2>
+                                <p class="see-all">See All</p>
+                            </div>
+                            <div class="card-box">
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="../assets/img/images/podcast7.png" alt="img">
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="../assets/img/images/podcast8.jfif" alt="img">
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="../assets/img/images/podcast9.jfif" alt="img">
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <div class="img-box">
+                                        <img src="../assets/img/images/podcast10.jfif" alt="img">
+                                    </div>
+                                    <h3 class="card-title">Today's Top Hits</h3>
+                                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div></div>
+        </div>
+        <router-outlet></router-outlet>
+
+       
+
+    </body>
+</html>

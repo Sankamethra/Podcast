@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.parent {
+    display: grid;
+    font-size: large;
+    grid-template-columns: 250px 1fr;
+    background-color: rgb(44, 18, 55);
+    color: white;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.child1 {
+    padding: 1.5rem 0.5rem;
+    position: relative;
+}
+
+.child1 ul li {
+    list-style: none;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.child1 ul li:hover {
+    background: black;
+}
+
+.child1 ul {
+    margin-top: 2rem;
+}
+
+.main-icon {
+    font-size: 25px;
+    color: rgb(5, 5, 5);
+    margin-right: 1rem;
+}
+
+.logo {
+    padding: 0 1.5rem;
+}
+
+.logo i {
+    font-size: 25px;
+    background: white;
+    border-radius: 50%;
+    color: white;
+    padding: 6px 8px;
+}
+
+.logo span {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.user-records {
+    margin-top: 3rem;
+}
+
+.user-records div {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.user-records div:hover {
+    background: black;
+}
+
+.user-records i {
+    border-radius: 3px;
+    color: black;
+    margin-right: 1rem;
+}
+
+.plus-icon {
+    background: white;
+    padding: 5px 7px;
+}
+
+.heart-icon {
+    background: linear-gradient(135deg, rgb(46, 46, 141), white);
+    padding: 5px;
+}
+
+.user-records span {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.site-info {
+    position: absolute;
+    bottom: 2rem;
+    color: white;
+    font-size: 11px;
+    padding: 0 2rem;
+}
+
+.site-info p {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.child2 {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sub-cild-1 {
+    background-color: rg(12, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 8px;
+    position: fixed;
+}
+
+.fa-chevron-left {
+    margin-left: 2rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.sign-up {
+    font-weight: 700;
+    font-size: 15px;
+    background: none;
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.about {
+    font-weight: 700;
+    font-size: 15px;
+    background: none;
+    color: rgb(163, 163, 163);
+    margin-right: 1rem;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-left: 62%;
+}
+
+.about:hover {
+    background: white;
+    color: aliceblue;
+}
+
+.sign-up:hover {
+    background: black;
+    color: aliceblue;
+}
+
+.log-in {
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    background: aliceblue;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit{
+    margin-left: 30%;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    background: aliceblue;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.menu {
+    position: sticky;
+}
+
+/*------card page------*/
+.sub-cild-2 {
+    overflow-y: auto;
+    overflow-x: auto;
+    background-image: linear-gradient(0deg, rgba(37, 51, 124, 0.5), rgba(36, 6, 29, 0.8), black), url("../img/images/music.jpg");
+    background-repeat: no-repeat;
+    margin-top: 33px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#sub-child-2 {
+    background-image: linear-gradient(0deg, rgb(17, 26, 71, 0.5), rgba(36, 6, 29, 0.8), black), url("../img/images/music.jpg");
+    background-repeat: no-repeat;
+    margin-top: 33px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*-----playlist song page------*/
+
+
+.playlists {
+
+    background: ;
+    padding: 1rem 3rem;
+    color: rgb(163, 163, 163);
+    margin-top: 0px;
+}
+
+.card-container {
+    margin-bottom: 0.5rem;
+}
+
+.card-top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-all {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+
+.card-box {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.card {
+    background: rgb(28, 28, 28);
+    height: 19rem;
+    position: relative;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.card1{
+    height: 44rem;
+    position: relative;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.card:hover {
+    background: rgb(34, 34, 34);
+}
+
+.img-box {
+    position: relative;
+    height: 12rem;
+}
+
+.img-box img {
+    position: absolute;
+    width: 100%;
+    height: 12rem;
+    border-radius: 5px;
+}
+
+.card-title {
+    color: lightgray;
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.card-description {
+    color: rgb(163, 163, 163);
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.album-container {
+    height: 100%;
+    background-image: linear-gradient(0deg, rgb(17, 26, 71, 0.5), rgba(36, 6, 29, 0.8), rgba(41, 41, 41, 0.8)), url('../img/images/music.jpg');
+    background-repeat: no-repeat;
+    margin-top: 33px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: none;
+}
+
+.album-header {
+    margin-top: 0px;
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 3rem 2rem;
+}
+
+.playlist-name {
+    font-size: 75px;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.playlist-description {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(190, 195, 198);
+    margin-top: 1rem;
+}
+
+.playlist-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.playlist-info span {
+    font-weight: 600;
+    margin: 0 8px;
+}
+
+.playlist-info i {
+    font-size: 6px;
+}
+
+.playlist-songs {
+    padding: 2rem;
+    border-collapse: collapse;
+    border: none;
+}
+
+.playlist-songs table {
+    width: 100%;
+    color: rgb(190, 195, 198);
+}
+
+.song-img {
+    width: 3.5rem;
+    height: 2.3rem;
+}
+
+.song-img1{
+    width: 30%;
+    height: 30%;
+    margin-left: 80%;
+}
+thead th {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+thead {
+    border-bottom: 1px solid grey;
+}
+
+tbody img {
+    margin: 0.5rem;
+}
+
+.song-title {
+    display: flex;
+    align-items: center;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: rgb(56, 56, 56, 0.45);
+}
+
+tbody td {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.playlist-utils i {
+    font-size: 25px;
+    margin: 0 1rem;
+    color: rgb(185, 191, 197);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.play {
+    font-size: 16px;
+    padding-left: 100px;
+    background: linear-gradient(135deg, rgb(46, 46, 141), rgb(188, 188, 250));
+    color: rgb(50, 50, 50);
+    border-radius: 50%;
+    padding: 14px 17px;
+}
+
+.s-play {
+    opacity: 0;
+}
+
+tr:hover .s-no {
+    display: none;
+}
+
+tr:hover .s-play {
+    opacity: 1;
+    color: aliceblue;
+}
+
+.s-search {
+    margin-left: 1rem;
+    font-weight: 600;
+    color: aliceblue;
+    opacity: 0;
+}
+
+tr:hover .s-search {
+    opacity: 1;
+}
+
+/*------ search page -------*/
+.search-page {
+    background: rgb(24, 24, 24);
+    padding: 1rem 3rem;
+    display: none;
+}
+
+.s-song {
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    padding: 0.8rem 0.5rem;
+    border-radius: 5px;
+    font-size: 16px;
+    background: whitesmoke;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+    display: block;
+}
+
+.song1{
+    text-align: justify;
+    margin-left: 2%;
+    padding: 0.8rem 0.5rem;
+    border-radius: 8px;
+    font-size: 16px;
+    background: whitesmoke;
+    display: inline-block;
+}
+
+.lable{
+    display: inline-block;
+}
+
+.create-song{
+    text-align: justify;
+    display: inline-block;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    display: block;
+}
+
+.search-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 3rem 0;
+    grid-gap: 1.5rem;
+}
+
+.search-card {
+    height: 17rem;
+    background: plum;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-card img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: 0.2s all ease-in-out;
+}
+
+.search-card:hover img {
+    width: 11rem;
+    height: 11rem;
+    opacity: 1;
+}
+
+.search-card span {
+    font-size: 22px;
+    font-weight: 700;
+    color: aliceblue;
+    display: block;
+}
+
+#opt-1 {
+    background: lightsalmon;
+}
+
+#opt-2 {
+    background: lightpink;
+}
+
+#opt-3 {
+    background: lightskyblue;
+}
+
+#opt-4 {
+    background: lightcoral;
+}
+
+#opt-5 {
+    background: lightgreen;
+}
+
+#opt-6 {
+    background: lightsteelblue;
+}
+
+#opt-7 {
+    background: magenta;
+}
+
+/*-------Artist Page--------*/
+.artist-page {
+    background: rgb(24, 24, 24);
+    display: none;
+}
+
+.artist-info {
+    padding: 2rem;
+    background-image: linear-gradient(rgba(126, 126, 126, 0.8), rgba(126, 126, 126, 0.8)), url('../img/images/taylor-swift.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.artist-info img {
+    width: 17rem;
+    height: 17rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(51, 51, 51);
+}
+
+.verified i {
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 50%;
+    background: rgb(0, 149, 255);
+}
+
+.artist-name {
+    font-size: 75px;
+    font-weight: 800;
+    color: aliceblue;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.verified {
+    font-size: 16px;
+    top: 1rem;
+    position: relative;
+    color: white;
+}
+
+.ex-info {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.artist-info i {
+    font-size: 12px;
+    margin: 0 0.3rem;
+}
+
+.a-content {
+    padding: 2rem;
+    border-collapse: collapse;
+    border: none;
+}
+
+.a-content table {
+    width: 100%;
+    color: rgb(190, 195, 198);
+
+}
+
+.header {
+    margin: 1rem 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: aliceblue;
+    padding: 0 1rem;
+}
+
+.related-artists {
+    padding: 0 2rem;
+}
+
+.a-more {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 0;
+}
+
+.a-card {
+    text-align: center;
+}
+
+.a-card img {
+    cursor: pointer;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+}
+
+.a-card p {
+    font-size: 18px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-top: 0.5rem;
+}
+
+.artist-page .song-title {
+    font-weight: 600;
+}
